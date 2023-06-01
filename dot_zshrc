@@ -5,7 +5,7 @@ function preflight() {
   if [ ! -d "$HOME/powerlevel10k" ]; then
     cd $HOME;
     mkdir -p $HOME/powerlevel10k;
-    wget https://github.com/romkatv/powerlevel10k/archive/refs/tags/v1.18.0.tar.gz;
+    wget -q https://github.com/romkatv/powerlevel10k/archive/refs/tags/v1.18.0.tar.gz;
     tar -xzf v1.18.0.tar.gz --strip-components=1 --directory=$HOME/powerlevel10k;
     rm v1.18.0.tar.gz
   fi
