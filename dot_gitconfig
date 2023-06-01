@@ -1,0 +1,12 @@
+[pull]
+        rebase = true
+[user]
+        name = Lars Nieuwenhuizen
+        email = l.nieuwenhuizen@fullstaq.com
+        signingKey = 0C40EB3F362672A0E05FB36583CE25AFA459F9AA
+[commit]
+        gpgSign = true
+[tag]
+        gpgSign = true
+[color]
+        ui = true
