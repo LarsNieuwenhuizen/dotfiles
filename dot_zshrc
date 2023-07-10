@@ -34,4 +34,11 @@ alias k=kubectl
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
+# Extra files
+DIRECTORY="$HOME/.zsh.d"
 
+if [ ! -d $DIRECTORY ]; then
+  mkdir -p $DIRECTORY;
+fi
+
+for file in $HOME/.zsh.d/**/*;  [ -f $file ] && source $file
