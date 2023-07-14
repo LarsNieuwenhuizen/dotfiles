@@ -3,3 +3,4 @@
 alias ga='git add'
 alias gst='git status'
 alias gd='git diff'
+alias glo='git log --oneline'
