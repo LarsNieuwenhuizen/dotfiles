@@ -34,6 +34,8 @@ alias k=kubectl
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
+[[ $commands[gh] ]] && source <(gh completion --shell zsh)
+
 # Extra files
 DIRECTORY="$HOME/.zsh.d"
 
