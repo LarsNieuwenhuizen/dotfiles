@@ -38,6 +38,8 @@ alias k=kubectl
 
 [[ $commands[gh] ]] && source <(gh completion --shell zsh)
 
+ZELLIJ_CONFIG_DIR="~/.config/zellij"
+
 # Extra files
 DIRECTORY="$HOME/.zsh.d"
 
