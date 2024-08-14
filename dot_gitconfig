@@ -8,3 +8,5 @@
 	gpgSign = true
 [pull]
 	rebase = true
+[core]
+  excludeFiles = ~/.gitignore
