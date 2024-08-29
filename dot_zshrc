@@ -1,14 +1,7 @@
 autoload -Uz compinit
 compinit
 
-function installStarship() {
-  curl -sS https://starship.rs/install.sh | sh
-  mkdir -p ~/.config && touch ~/.config/starship.toml
-  starship preset pastel-powerline -o ~/.config/starship.toml
-}
-
 function preflight() {
-  installStarship
   #p10kVersion=v1.20.0
 
   #if [ ! -d "$HOME/powerlevel10k" ]; then
