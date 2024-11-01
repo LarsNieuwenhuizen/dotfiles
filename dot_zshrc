@@ -1,33 +1,6 @@
 autoload -Uz compinit
 compinit
 
-function preflight() {
-  #p10kVersion=v1.20.0
-
-  #if [ ! -d "$HOME/powerlevel10k" ]; then
-  #  cd $HOME;
-  #  mkdir -p $HOME/powerlevel10k;
-   # wget -q https://github.com/romkatv/powerlevel10k/archive/refs/tags/$p10kVersion.tar.gz;
-   # tar -xzf $p10kVersion.tar.gz --strip-components=1 --directory=$HOME/powerlevel10k;
-    #rm $p10kVersion.tar.gz
-  #fi
-}
-
-
-preflight;
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
-#source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 if [ -d "${HOME}/.local/koala/bin" ]; then
   export PATH="${HOME}/.local/koala/bin:$PATH"
 fi
@@ -37,8 +10,6 @@ alias k=kubectl
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
 [[ $commands[gh] ]] && source <(gh completion --shell zsh)
-
-ZELLIJ_CONFIG_DIR="~/.config/zellij"
 
 # Extra files
 DIRECTORY="$HOME/.zsh.d"
