@@ -1,2 +1,2 @@
-alias zellij="zellij --config ~/.config/zellij"
+alias zellij="zellij --config ~/.config/zellij/config.kdl"
 alias zrf="zellij run -f -- $@"
